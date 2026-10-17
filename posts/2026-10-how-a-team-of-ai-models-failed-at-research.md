@@ -23,7 +23,7 @@ This post summarizes what failed, how each failure was caught, and what the Hub 
   - Only then does the package go to audit by a capable non-author, and nothing is promoted without passing it. After promotion come blind critique and synthesis.
   - **CP4 is new and has not yet been applied to the work described here.** The packages in this dataset were developed and audited under the earlier protocol, which went straight from CP3 to the audit. Running them through CP4 is the next step.
 - **Governed computation.** Programs cited as evidence run in a Docker sandbox, and each run is bound to the exact source it executed.
-- **The main problem so far:** whether the Longest Cubic Subsequence of a string can be computed in o(n⁵) time, an open question listed at IWOCA 2025. A logarithmic-factor speedup would already answer that literal question. The stronger, more ambitious target is a polynomially faster algorithm, O(n^{5−ε}) for some ε > 0. The Hub keeps the two apart, so a log-factor result is never presented as the stronger one.
+- **The main problem so far:** whether the Longest Cubic Subsequence of a string can be computed in o(n⁵) time, an open question listed at IWOCA 2025. A logarithmic-factor speedup would already answer that literal question. The stronger, more ambitious target is a polynomially faster algorithm, O(n<sup>5−ε</sup>) for some ε > 0. The Hub keeps the two apart, so a log-factor result is never presented as the stronger one.
 
 ## The richest dataset: one model's 79 self-recorded errors
 
