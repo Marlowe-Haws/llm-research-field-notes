@@ -15,9 +15,15 @@ This post summarizes what failed, how each failure was caught, and what the Hub 
   - A *Curator* screens references.
   - A *Codifier* drafts the governing rules.
   - *Scouts* search the literature.
-- **A research protocol with checkpoints.** CP0 is orientation, CP1 a validated formulation, CP2.x adversarial development rounds (each with a defect ledger and an attack-coverage map), and CP3 a package submitted for audit by a capable non-author before anything can be promoted. After promotion come blind critique and synthesis.
+- **A research protocol with checkpoints:**
+  - CP0 is orientation, and CP1 a validated formulation.
+  - CP2.x are adversarial development rounds, each with a defect ledger and an attack-coverage map.
+  - CP3 is a supported thesis.
+  - CP4 is a final author-side readiness check of the frozen package. It covers whether the claim answers the problem as posed, whether every assumption is supported, and whether corrections left anything behind.
+  - Only then does the package go to audit by a capable non-author, and nothing is promoted without passing it. After promotion come blind critique and synthesis.
+  - **CP4 is new and has not yet been applied to the work described here.** The packages in this dataset were developed and audited under the earlier protocol, which went straight from CP3 to the audit. Running them through CP4 is the next step.
 - **Governed computation.** Programs cited as evidence run in a Docker sandbox, and each run is bound to the exact source it executed.
-- **The main problem so far:** whether the Longest Cubic Subsequence of a string can be computed in o(n⁵) time, an open question listed at IWOCA 2025.
+- **The main problem so far:** whether the Longest Cubic Subsequence of a string can be computed in o(n⁵) time, an open question listed at IWOCA 2025. A logarithmic-factor speedup would already answer that literal question. The stronger, more ambitious target is a polynomially faster algorithm, O(n^{5−ε}) for some ε > 0. The Hub keeps the two apart, so a log-factor result is never presented as the stronger one.
 
 ## The richest dataset: one model's 79 self-recorded errors
 
@@ -45,6 +51,8 @@ But the last cluster of errors was different. Errors 66, 68 and 75 through 79 we
 - **a cleanup that reintroduced what it removed:** excluded material was stripped from record bodies and copied into their metadata by the same writes.
 
 The model's own summary of the habit behind the last cases: **stating or checking a property of a whole from an inspection of a part.**
+
+The Hub's new CP4 checkpoint asks the author to check exactly these things before requesting an audit: claim against problem, every assumption, correction residue. Whether an author-side checklist catches errors that so far only a second reader has caught is an open question. This dataset will be its first test.
 
 ## The same mistake, at every scale
 
@@ -76,7 +84,7 @@ The same Opus instance twice wrote its own research conclusions into what were s
 
 | Failure | Safeguard in the Hub |
 |---|---|
-| Overclaiming, wrong readiness judgments | No promotion without a capable non-author audit at CP3, then blind critique; an audit is explicitly *not* verification |
+| Overclaiming, wrong readiness judgments | An author-side CP4 readiness check (new, not yet applied here), then no promotion without a capable non-author audit, then blind critique; an audit is explicitly *not* verification |
 | Measurements that can't disagree | CP2 rounds require preregistered predictions, known-answer controls that are able to fail, and two methods unless one is exhaustive |
 | Unbound evidence | Only sandboxed, source-bound runs count as research evidence; host-run diagnostics don't |
 | Reconstruction instead of reading | Curated, neutral reference cards and page-ranged reading of primary sources, one tool call away |
@@ -97,7 +105,7 @@ The same Opus instance twice wrote its own research conclusions into what were s
 
 - **Most of the detailed research data is one model's self-report.** It is unusually thorough, but the classification is its own, and the error counts aren't comparable across models.
 - **Models had very different amounts of time** (from 1 session to 14), so failure counts reflect exposure as well as capability.
-- **None of the research claims mentioned here has yet been through the Hub's blind critique,** so nothing in this post asserts a result about the problem itself.
+- **None of the research claims mentioned here has yet been through CP4 or the Hub's blind critique,** so nothing in this post asserts a result about the problem itself.
 
 ---
 
