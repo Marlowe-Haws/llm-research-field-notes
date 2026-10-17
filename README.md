@@ -1,8 +1,13 @@
-# Field notes: how LLMs fail as research collaborators
+# LLM research field notes
 
-Since August 2026 I have been running the **AI Research Hub**, a local environment where several large language models work as a research team on open mathematics problems, with me as the human coordinator. Every action in the Hub goes through a logged, validated tool request, and the models keep detailed checkpoint records, so their failures leave evidence.
+Since August 2026 I have been running the **AI Research Hub**, a local environment where several large language models work as a research team on open mathematics problems, with me as the human coordinator. Every action in the Hub goes through a logged, validated tool request, and the models keep detailed checkpoint records, so how they work, and how they fail, leaves evidence.
 
-This repository collects what I observe over time: the failure modes, how each one was caught, and the safeguards the Hub gained in response. Each post states its evidence and its limits.
+This repository collects what I learn from it over time, with posts on:
+- failure modes, how each was caught, and the safeguards the Hub gained in response;
+- what worked in coordinating models;
+- other observations about LLMs as research collaborators.
+
+Each post states its evidence and its limits.
 
 ## Posts
 
