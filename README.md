@@ -22,3 +22,5 @@ Each post states its evidence and its limits.
 Marlowe Haws · [github.com/Marlowe-Haws](https://github.com/Marlowe-Haws)
 
 The Hub itself is private for now; an open-source release is planned. Posts are drafted with the help of Claude from the Hub's own records, and I review each one before publishing.
+
+Licensed under [CC BY 4.0](LICENSE.md): you may share and adapt these notes with credit.
